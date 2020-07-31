@@ -71,9 +71,9 @@
     font-size: 40px;
 }
 input[type="checkbox"] {
-    display: inline;
-    width:30px;
-    height:30px;
+    display:inline;
+    max-width:30px;
+    max-height:10px;
 }
 .button {
     padding: .7em 1.1em;
