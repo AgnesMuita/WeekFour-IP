@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="CSS/styles.css" type="text/css">
+    <script>"JS/jquery-3.5.1.js"</script>
+    <script>"JS/scripts.js"</script>
     <title>Holy Rollers Pizzeria</title>
 </head>
 <body>
@@ -39,7 +41,7 @@
             </div>
             <div class="row" id="Roller">
                 <div class="col-md-3" id="work5">
-                    <img src="img/unnamed (1).jpg" alt="work1">
+                    <img src="img/unnamed.jpg" alt="work1">
                 </div>
                 <div class="col-md-3" id="work6">
                     <img src="img/pizza6.jpg" alt="work2">
@@ -52,81 +54,104 @@
                 </div>
             </div>
         </div> 
-        <div class="Form">
-            <form name="input" action="#" id="formSubmit" method="post">
-                <h1>Order Your Holy Pizza Now</h1>
-                <div class="checkboxes">
-                    <p>Pizza Size</p>
-                        <label for="toppings">Small(Ksh700)</label>
-                        <input type="checkbox" id="size" class="form-control">
-                        <label for="toppings">Medium(Ksh850)</label>
-                        <input type="checkbox" id="size" class="form-control">
-                        <label for="toppings">Large(Ksh1050)</label>
-                        <input type="checkbox" id="size" class="form-control">
-                        <label for="toppings">Extra Large(Ksh 1200)</label>
-                        <input type="checkbox" id="size" class="form-control">
-                    <p>Pizza toppings (Ksh 100 each)</p>
-                        <label for="toppings">Pepperoni</label>
-                        <input type="checkbox" id="topping1" class="form-control">
-                        <label for="toppings">Mushrooms</label>
-                        <input type="checkbox" id="topping2" class="form-control">
-                        <label for="toppings">Onions</label>
-                        <input type="checkbox" id="topping3" class="form-control">
-                        <label for="toppings">Sausage</label>
-                        <input type="checkbox" id="topping4" class="form-control">
-                        <label for="toppings">Extra Cheese</label>
-                        <input type="checkbox" id="topping5" class="form-control">
-                        <label for="toppings">Black Olives</label>
-                        <input type="checkbox" id="topping6" class="form-control">
-                        <label for="toppings">Green Pepper</label>
-                        <input type="checkbox" id="topping7" class="form-control">
-                        <label for="toppings">Pineapples</label>
-                        <input type="checkbox" id="topping8" class="form-control">
-                        <label for="toppings">Ham</label>
-                        <input type="checkbox" id="topping9" class="form-control">
-                        <label for="toppings">Anchovies</label>
-                        <input type="checkbox" id="topping10" class="form-control">
-                    <p>Pizza Crust</p>
-                        <label for="crust">Cheese-Stuffed Crust</label>
-                        <input type="checkbox" id="crust" class="form-control">
-                        <label for="crust">Pizza Bagels</label>
-                        <input type="checkbox" id="crust" class="form-control">
-                        <label for="crust">Flatbread</label>
-                        <input type="checkbox" id="crust" class="form-control">
-                        <label for="crust">Thin crust</label>
-                        <input type="checkbox" id="crust" class="form-control">
-                        <label for="crust">Sicilian Style</label>
-                        <input type="checkbox" id="crust" class="form-control">
-                        <label for="crust">Chicago Deep Dish</label>
-                        <input type="checkbox" id="crust" class="form-control">
+        <div class="row">
+            <h1>Order Your Rollers' Pizza Now</h1>
+            <div class="col-md-3">
+                <div class="Pizzas" id="leftcolumn">
                 </div>
-                <div class="custom-select" style="width:300px">
-                    <select>
-                        <option value ="1">Delivery</option>
-                        <option value="2">CarryOut</option>
-                    </select>
-                </div>
-                <div class="Contact Information">
-                    <h1>Contact details</h1>
-                    <div class="form-group">
-                        <label for ="name">First Name</label>
-                        <input type="text" class="form-group" name="firstname" placeholder="Aggie">
+            </div>
+            <div class="col-md-6">
+                <div class="Pizzas">
+                    <div class= "form-group">
+                        <form id="pizzaOrder">
+                            <label for="size">Choose Pizza Size</label>
+                            <select class="form-control" id="size">
+                                <option value = 700>Small:ksh 700</option>
+                                <option value = 850>Medium:ksh 850</option>
+                                <option value = 1050>Large:ksh 1050</option>
+                                <option value = 1200>Extra-large:ksh 1200</option>
+                            </select>
+                            <label for="toppings1">Choose Topping 1</label>
+                            <select class="form-control" id="toppings1">
+                                <option value = 0>Plain Pizza with Cheese and Sauce</option>
+                                <option value = 1>Pepperoni(+ksh 150)</option>
+                                <option value = 2>Mushrooms(+ksh 100)</option>
+                                <option value = 3>Onions(+ksh 100)</option>
+                                <option value = 4>Sausage(+ksh 150)</option>
+                                <option value = 5>Extra Cheese(+150)</option>
+                                <option value = 6>Black Olives(+150)</option>
+                                <option value = 7>Green pepper(+ksh 150)</option>
+                                <option value = 8>Pineapples(+ksh 100)</option>
+                                <option value = 9>Ham (+ksh 150)</option>
+                                <option value = 10>Anchovies (+ksh 150)</option>
+                            </select>
+                            <label for="toppings2">Choose Topping 2</label>
+                            <select class="form-control" id="toppings2">
+                                <option value = 0>Plain Pizza with Cheese and Sauce</option>
+                                <option value = 1>Pepperoni(+ksh 150)</option>
+                                <option value = 2>Mushrooms(+ksh 100)</option>
+                                <option value = 3>Onions(+ksh 100)</option>
+                                <option value = 4>Sausage(+ksh 150)</option>
+                                <option value = 5>Extra Cheese(+150)</option>
+                                <option value = 6>Black Olives(+150)</option>
+                                <option value = 7>Green pepper(+ksh 150)</option>
+                                <option value = 8>Pineapples(+ksh 100)</option>
+                                <option value = 9>Ham (+ksh 150)</option>
+                                <option value = 10>Anchovies (+ksh 150)</option>
+                            </select>
+                            <label for="toppings3">Choose Topping 3</label>
+                            <select class="form-control" id="toppings2">
+                                <option value = 0>Plain Pizza with Cheese and Sauce</option>
+                                <option value = 1>Pepperoni(+ksh 150)</option>
+                                <option value = 2>Mushrooms(+ksh 100)</option>
+                                <option value = 3>Onions(+ksh 100)</option>
+                                <option value = 4>Sausage(+ksh 150)</option>
+                                <option value = 5>Extra Cheese(+150)</option>
+                                <option value = 6>Black Olives(+150)</option>
+                                <option value = 7>Green pepper(+ksh 150)</option>
+                                <option value = 8>Pineapples(+ksh 100)</option>
+                                <option value = 9>Ham (+ksh 150)</option>
+                                <option value = 10>Anchovies (+ksh 150)</option>
+                            </select>
+                            <label for="toppings4">Choose Topping 4</label>
+                            <select class="form-control" id="toppings4">
+                                <option value = 0>Plain Pizza with Cheese and Sauce</option>
+                                <option value = 1>Pepperoni(+ksh 150)</option>
+                                <option value = 2>Mushrooms(+ksh 100)</option>
+                                <option value = 3>Onions(+ksh 100)</option>
+                                <option value = 4>Sausage(+ksh 150)</option>
+                                <option value = 5>Extra Cheese(+150)</option>
+                                <option value = 6>Black Olives(+150)</option>
+                                <option value = 7>Green pepper(+ksh 150)</option>
+                                <option value = 8>Pineapples(+ksh 100)</option>
+                                <option value = 9>Ham (+ksh 150)</option>
+                                <option value = 10>Anchovies (+ksh 150)</option>
+                            </select>
+                            <button type="submit" class="btn btn-success" id="orderButton">Get Total Charge</button>
+                            <button type="button" class="btw btn-danger" value="Refresh Page" onClick="window.location.reload()" id="cancelButton">Cancel</button>                   
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="name">Last Name</label>
-                        <input type="text" class="form-group" name="lastname" placeholder="Muita">
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Address</label>
-                        <input type="text" class="form-group" name="Address" placeholder="1234 Street City">
-                    </div> 
                 </div>
-                <button type="checkout" class="button">Checkout</button>
-            </form>
+            </div>
+            <div class="col-md-3">
+                <div class="Pizzas" id="rightColumn">
+                </div>
+            </div>
+        </div>
+        <div id="totalOrder">
+            <div class="Pizzas"id="Orders">
+                <h1 class="orderTitle">Your Pizza Total:</h1>
+                <ul>
+
+                </ul>
+            </div> 
         </div>
         <div class="footer">
             <p>Holy Rollers Pizzeria <br>2020</p>
         </div>
-    </div>
-</body>
+    </body>
 </html>
+
+
+
+        
