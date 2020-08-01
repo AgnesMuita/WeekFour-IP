@@ -58,27 +58,56 @@
     padding-top:10px;
     font-family: 'Gabriela', serif;
 }
-.Form {
-    background-image:url('../img/pure-black-background-f82588d3.jpg');
+.form-group {
     background-position: absolute;
     background-repeat: no-repeat;
     background-size: 1600px 1000px;
     background-position-x: center;
     font-family: 'Comfortaa';
+    /* color: white; */
+}
+.col-md-6 {
+    background-image:url('../img/pizza-1200x675.jpg');
+}
+.Pizzas {
+    padding: 30px;
+}
+.rightColumn {
+    background-color:red;
+}
+.form-control {
+    background-image: url('../img/pizza-1200x675.jpg');
+    color:black;
+}
+.form-control option {
+    background-color: black;
+    font-size: 1rem;
+    color:white;
+}
+.orderButton {
+    margin-top:15px;
+}
+.orderTitle {
+    text-align: center;
+    margin-top: 50px;
+}
+.ul{
+    list-style: none;
+    font-size: 3rem;
+}
+.cancelButton {
+    float: left;
+    margin-top: 30px;
+}
+#leftColumn {
+    background-color: green;
+    height: 100%;
+}
+#Orders{
+    background-image:url('../img/pure-black-background-f82588d3.jpg');
     color: white;
-}
-.checkboxes p {
-    font-size: 40px;
-}
-input[type="checkbox"] {
-    display:inline;
-    max-width:30px;
-    max-height:10px;
-}
-.button {
-    padding: .7em 1.1em;
-    color: white; 
-    background-color: blue;
+    margin-top:10px;
+    margin-bottom: 40px;
 }
 .footer {
     text-align: center;
