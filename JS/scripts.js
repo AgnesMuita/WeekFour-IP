@@ -51,8 +51,14 @@ $(document).ready(function(){
           case "Stuffed":
             crust_price = 100;
           break;
-          case "Gluten-free":
+          case "Pizza-Bagels":
             crust_price = 150;
+          break;
+          case "Flatbread":
+            crust_price = 200;
+          break;
+          case "Cheese-Stuffed crust":
+            crust_price = 200;
           break;
           default:
             console.log("No price"); 
@@ -125,6 +131,15 @@ $(document).ready(function(){
               case "Gluten-free":
                 crust_price = 150;
               break;
+              case "Pizza-Bagels":
+                crust_price = 150;
+              break;
+              case "Flatbread":
+                crust_price = 200;
+              break;
+              case "Cheese-Stuffed crust":
+                crust_price = 200;
+              break;
               default:
                 console.log("No price"); 
             }
@@ -180,7 +195,7 @@ $(document).ready(function(){
   
         if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
     
-          $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliveryamount);
+          $("#finallmessage").append(person+", We have received your order and it will be delivered to you in "+location+ ". Prepare sh. "+deliveryamount +".     Thank you for choosing Holy Rollers!");
           $("#totalbill").hide();
           $("#finallmessage").slideDown(1200);
         }
