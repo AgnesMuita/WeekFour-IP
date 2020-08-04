@@ -15,12 +15,12 @@ $(document).ready(function(){
     //   $("div.choise").slideDown(1000);
     // });
     $("button.proceed").click(function(event){
-     let pname = $(".name option:selected").val();
+     let pname = $("#name option:selected").val();
      let psize = $("#size option:selected").val();
      let pcrust = $("#crust option:selected").val();
      let ptopping = [];
-     $.each($("input[name='toppings']:checked"), function(){            
-         ptopping.push($(this).val());
+    $.each($("input[name='toppings']:checked"), function(){            
+        ptopping.push($(this).val());
      });
      console.log(ptopping.join(", "));
      switch(psize){
@@ -64,7 +64,7 @@ $(document).ready(function(){
             console.log("No price"); 
         }
         let topping_value = ptopping.length*100;
-        console.log("toppins value" + topping_value);
+        console.log("toppings value" + topping_value);
     
         if((psize == "0") && (pcrust == "0")){
           console.log("nothing selected");
@@ -144,7 +144,7 @@ $(document).ready(function(){
                 console.log("No price"); 
             }
             let topping_value = ptopping.length*100;
-            console.log("toppins value" + topping_value);
+            console.log("toppings value" + topping_value);
             total = price + crust_price + topping_value;
             console.log(total);
     
