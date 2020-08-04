@@ -28,15 +28,15 @@ $(document).ready(function(){
           price =0;
         break;
         case "large":
-           price = 1000;
+           price = 1200;
            console.log(price);
          break;
          case "medium":
-           price = 650;
+           price = 750;
            console.log("The price is "+price);
          break;
          case "small":
-           price = 350;
+           price = 600;
            console.log(price);
          default:
            console.log("error"); 
@@ -57,7 +57,7 @@ $(document).ready(function(){
           default:
             console.log("No price"); 
         }
-        let topping_value = ptopping.length*30;
+        let topping_value = ptopping.length*100;
         console.log("toppins value" + topping_value);
     
         if((psize == "0") && (pcrust == "0")){
@@ -99,15 +99,15 @@ $(document).ready(function(){
               price =0;
             break;
             case "large":
-               price = 1000;
+               price = 1200;
                console.log(price);
              break;
              case "medium":
-               price = 650;
+               price = 750;
                console.log("The price is "+price);
              break;
              case "small":
-               price = 350;
+               price = 600;
                console.log(price);
              default:
                console.log("error"); 
@@ -123,12 +123,12 @@ $(document).ready(function(){
                 crust_price = 100;
               break;
               case "Gluten-free":
-                crust_price = 1500;
+                crust_price = 150;
               break;
               default:
                 console.log("No price"); 
             }
-            let topping_value = ptopping.length*30;
+            let topping_value = ptopping.length*100;
             console.log("toppins value" + topping_value);
             total = price + crust_price + topping_value;
             console.log(total);
