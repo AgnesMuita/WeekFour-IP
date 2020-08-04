@@ -6,7 +6,7 @@ This web application allows users to order their pizza based on preferred size, 
 ## Setup/Installation Requirements
 The application can be setup by cloning the project on https://github.com/AgnesMuita/WeekFour-IP
 ## Live Site
-
+https://agnesmuita.github.io/WeekFour-IP/
 
 ## Behavior Driven Development
 | Input            | Behaviour                         | Output                        |
