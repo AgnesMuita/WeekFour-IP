@@ -23,5 +23,39 @@ $(document).ready(function(){
          ptopping.push($(this).val());
      });
      console.log(ptopping.join(", "));
-  
+     switch(psize){
+        case "0":
+          price =0;
+        break;
+        case "large":
+           price = 1000;
+           console.log(price);
+         break;
+         case "medium":
+           price = 650;
+           console.log("The price is "+price);
+         break;
+         case "small":
+           price = 350;
+           console.log(price);
+         default:
+           console.log("error"); 
+       }
+       switch(pcrust){
+          case "0":
+            crust_price = 0;
+          break;
+          case "Crispy":
+            crust_price = 250;
+          break;
+          case "Stuffed":
+            crust_price = 100;
+          break;
+          case "Gluten-free":
+            crust_price = 150;
+          break;
+          default:
+            console.log("No price"); 
+        }
+        
      
