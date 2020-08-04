@@ -125,7 +125,7 @@ td,th{
     color: #ffa500;
 }
 @media only screen and (max-width: 485px){
-    .flex-xs-column {
+    .about-us {
       flex-direction: column;
     }
 }
